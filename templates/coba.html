@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>coba</title>
+	<style>
+		.box-list {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 1rem;
+			width: 480px;
+		}
+
+		.box-item {
+			position: relative;
+			transition: filter 0.3s;
+			/* Tambahkan transisi untuk efek yang lebih halus */
+		}
+
+		.box {
+			aspect-ratio: 1/1;
+			width: 100%;
+			height: auto;
+			background-color: black;
+		}
+
+		/* Efek blur pada box-item yang tidak di-hover */
+		/* #box1:hover ~ #box2 .box,
+        #box2:hover ~ #box1 .box {
+            filter: blur(10px);
+        } */
+
+		.box-list:has(#box1:hover) #box2 .box,
+		.box-list:has(#box2:hover) #box1 .box {
+			filter: blur(10px);
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="box-list">
+		<div class="box-item" id="box1">
+			<div class="box"></div>
+		</div>
+		<div class="box-item" id="box2">
+			<div class="box"></div>
+		</div>
+		<div class="box-item" id="box3">
+			<div class="box"></div>
+		</div>
+		<div class="box-item" id="box4">
+			<div class="box"></div>
+		</div>
+	</div>
+
+</body>
+
+</html>

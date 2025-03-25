@@ -1,0 +1,78 @@
+#map {
+   width: 100%;
+   height: 480px;
+
+   .marker {
+      border: none;
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0);
+   }
+
+   .mapboxgl-ctrl-bottom-left,
+   .mapboxgl-ctrl-bottom-right,
+   .mapboxgl-ctrl-attrib-inner {
+      display: none;
+   }
+
+   .mapboxgl-popup {
+      padding-bottom: 50px;
+      color: #151515;
+      text-align: center;
+      letter-spacing: 1.5px;
+      max-width: 357px !important;
+   }
+
+   .mapboxgl-popup h5 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #393939;
+      text-transform: uppercase;
+      border-bottom: solid 1px rgba(0, 0, 0, .3);
+      margin: .5em 0 .5em 0;
+
+   }
+
+   .mapboxgl-popup p {
+      font-size: 14px;
+      margin: 0;
+   }
+}
+
+#listings {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   font-size: .875rem;
+   color: rgba(255, 255, 255, .75);
+
+   .store-item {
+      width: 100%;
+      height: 100%;
+      max-width: 15rem;
+   }
+
+   .store-item .number {
+      min-width: 1.5rem;
+      position: relative;
+
+      &::before {
+         content: '.';
+         position: absolute;
+         top: 0;
+         right: 0;
+      }
+   }
+
+   .store-item .item .title {
+      cursor: pointer;
+
+      &:hover {
+         color: white;
+      }
+   }
+}

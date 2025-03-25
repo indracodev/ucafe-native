@@ -1,0 +1,26 @@
+.page-header,
+#detail-product {
+   background-color: rgba(0, 0, 0, .125);
+}
+
+#nav-marketplace svg {
+   width: 2.25em;
+   height: 2.25em;
+}
+
+#carousel-detail-product::before {
+   content: '';
+   width: 90%;
+   height: 90%;
+   background-color: white;
+   border-radius: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(1);
+   filter: blur(3rem) opacity(.25);
+}
+
+.product-description::first-letter {
+   text-transform: uppercase;
+}

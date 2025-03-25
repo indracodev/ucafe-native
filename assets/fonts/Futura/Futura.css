@@ -1,0 +1,36 @@
+@font-face {
+   font-family: 'FuturaMedium';
+   src: url(FuturaMedium.woff);
+   font-weight: 500;
+   font-style: normal;
+}
+
+.fw-medium {
+   font-family: 'FuturaMedium';
+}
+
+@font-face {
+   font-family: 'FuturaLight';
+   src: url(FuturaLight.woff);
+   font-weight: 300;
+   font-style: normal;
+}
+
+.fw-light {
+   font-family: 'FuturaLight';
+}
+
+@font-face {
+   font-family: 'FuturaBold';
+   src: url(FuturaBold.woff);
+   font-weight: 700;
+   font-style: normal;
+}
+
+.fw-Bold {
+   font-family: 'FuturaBold';
+}
+
+body {
+   font-family: 'FuturaLight';
+}

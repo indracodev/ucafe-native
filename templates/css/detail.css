@@ -1,0 +1,16 @@
+.page {
+   background-color: var(--color-instant-cappuccino);
+}
+
+.page-header, #detail-product {
+   background-color: rgba(0, 0, 0, .125);
+}
+
+#nav-marketplace svg {
+   width: 2.25em;
+   height: 2.25em;
+}
+
+#carousel-related-product .carousel-item {
+   background-color: var(--color-instant-cappuccino);
+}
