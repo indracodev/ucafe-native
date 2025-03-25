@@ -15,9 +15,9 @@ if ($conn->connect_error) {
 }
 
 // tautan : ubah sesuai direktory anda (localhost)
-// $ucafe = "http://localhost/www/build/indracoweb/ucafe-php/";
+$ucafe = "http://localhost/www/build/indracoweb/ucafe-php/";
 // $ucafe = file_get_contents(__DIR__);
-$ucafe = "http://localhost/ucafe-php/";
+// $ucafe = "http://localhost/ucafe-php/";
 // var_dump($ucafe);
 
 // =======================================
